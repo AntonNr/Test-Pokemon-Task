@@ -15,9 +15,51 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wfJ-jR-KwM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainMenuTableViewCell" id="3ab-sP-QUd" customClass="MainMenuTableViewCell" customModule="Test_Pokemon_Task" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="71"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ab-sP-QUd" id="B8m-8C-gNZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="71"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9D-C8-1YY">
+                                                    <rect key="frame" x="30" y="11" width="354" height="48.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="O9D-C8-1YY" firstAttribute="leading" secondItem="B8m-8C-gNZ" secondAttribute="leadingMargin" constant="10" id="3FU-WQ-wXn"/>
+                                                <constraint firstItem="O9D-C8-1YY" firstAttribute="top" secondItem="B8m-8C-gNZ" secondAttribute="topMargin" id="KWG-jg-LSP"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="O9D-C8-1YY" secondAttribute="trailing" constant="10" id="Tok-Ih-rtC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="O9D-C8-1YY" secondAttribute="bottom" constant="0.5" id="xFj-Cb-tDh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="pokemonNameLabel" destination="O9D-C8-1YY" id="fND-oA-0f5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wfJ-jR-KwM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AmB-Wo-S2S"/>
+                            <constraint firstItem="wfJ-jR-KwM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kZH-dl-P9k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wfJ-jR-KwM" secondAttribute="bottom" id="zDH-LG-l3g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wfJ-jR-KwM" secondAttribute="trailing" id="zZd-R0-mqu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pokemonTableView" destination="wfJ-jR-KwM" id="dYM-TQ-Twa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
