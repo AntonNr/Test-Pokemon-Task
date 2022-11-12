@@ -18,7 +18,8 @@
 		FD6667EE291D737600909182 /* DetailsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667ED291D737600909182 /* DetailsMenuView.swift */; };
 		FD6667F0291D73B800909182 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667EF291D73B800909182 /* MainMenuViewModel.swift */; };
 		FD6667F2291D73C600909182 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667F1291D73C600909182 /* MainMenuView.swift */; };
-		FD6667F5291D74F900909182 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667F4291D74F900909182 /* Entity.swift */; };
+		FD6667F5291D74F900909182 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667F4291D74F900909182 /* Pokemon.swift */; };
+		FDD4CA5B292014B100537944 /* MainMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD4CA5A292014B000537944 /* MainMenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +36,8 @@
 		FD6667ED291D737600909182 /* DetailsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMenuView.swift; sourceTree = "<group>"; };
 		FD6667EF291D73B800909182 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 		FD6667F1291D73C600909182 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
-		FD6667F4291D74F900909182 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		FD6667F4291D74F900909182 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		FDD4CA5A292014B000537944 /* MainMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMenuTableViewCell.swift; path = ../../../../../../../Documents/MainMenuTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		FD6667E6291D72EF00909182 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FDD4CA592920149900537944 /* Cells */,
 				FD6667E8291D730A00909182 /* Details Menu */,
 				FD6667E7291D730300909182 /* Main Menu */,
 			);
@@ -120,9 +123,17 @@
 		FD6667F3291D74E500909182 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				FD6667F4291D74F900909182 /* Entity.swift */,
+				FD6667F4291D74F900909182 /* Pokemon.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		FDD4CA592920149900537944 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FDD4CA5A292014B000537944 /* MainMenuTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +210,10 @@
 				FD6667EA291D733F00909182 /* DetailsMenuViewController.swift in Sources */,
 				FD6667D6291D72B500909182 /* MainMenuViewController.swift in Sources */,
 				FD6667F2291D73C600909182 /* MainMenuView.swift in Sources */,
+				FDD4CA5B292014B100537944 /* MainMenuTableViewCell.swift in Sources */,
 				FD6667EE291D737600909182 /* DetailsMenuView.swift in Sources */,
 				FD6667D2291D72B500909182 /* AppDelegate.swift in Sources */,
-				FD6667F5291D74F900909182 /* Entity.swift in Sources */,
+				FD6667F5291D74F900909182 /* Pokemon.swift in Sources */,
 				FD6667EC291D736A00909182 /* DetailsMenuViewModel.swift in Sources */,
 				FD6667F0291D73B800909182 /* MainMenuViewModel.swift in Sources */,
 				FD6667D4291D72B500909182 /* SceneDelegate.swift in Sources */,
