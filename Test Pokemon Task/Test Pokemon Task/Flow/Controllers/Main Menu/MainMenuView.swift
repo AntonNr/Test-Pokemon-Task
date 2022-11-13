@@ -7,9 +7,8 @@ class MainMenuView: UIView {
     @IBOutlet var pokemonImageView: UIImageView!
        
     func decorate() {
-           
         pokemonImageView.image = UIImage(named: "Pokemon_logo")
-           
+        pokemonTableView.backgroundColor = backgroundColor
     }
     
 }

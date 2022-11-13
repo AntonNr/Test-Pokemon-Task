@@ -39,7 +39,8 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
         if let cell = tableView.dequeueReusableCell(withIdentifier: "MainMenuTableViewCell", for: indexPath) as? MainMenuTableViewCell {
                 
             cell.pokemonNameLabel.text = pokemonArray?.results?[indexPath.row].name?.capitalized
-                
+            cell.backgroundColor = rootView.backgroundColor
+            
             return cell
         }
                 

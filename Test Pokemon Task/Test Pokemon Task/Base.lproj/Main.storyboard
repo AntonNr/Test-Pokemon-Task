@@ -67,7 +67,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.80392156859999997" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="S6T-Vb-HBt" firstAttribute="top" secondItem="luQ-gP-kW3" secondAttribute="bottom" constant="8" id="Cq3-se-jgO"/>
                             <constraint firstItem="luQ-gP-kW3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ggp-lc-Cq8"/>
@@ -133,7 +133,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hUA-gb-Cao"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.80392156859999997" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="CYh-BT-wM8" firstAttribute="centerX" secondItem="N8j-ne-5hT" secondAttribute="centerX" id="7Ne-gl-Jec"/>
                             <constraint firstItem="nFl-QB-Qxa" firstAttribute="top" secondItem="pSg-lP-1CL" secondAttribute="bottom" constant="50" id="7dm-EG-uGL"/>
