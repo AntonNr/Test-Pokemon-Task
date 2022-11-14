@@ -20,7 +20,12 @@ class DetailsMenuViewController: UIViewController {
             if let image = self?.detailsMenuViewModel.getImage(from: result.sprites?.frontImage ?? "nil") {
                 self?.rootView.pokemonImage.image = image
             }
-                    
+        }
+        
+        detailsMenuViewModel.showAlert = { text in
+            let alert = UIAlertController(title: text, message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true)
         }
     }
     

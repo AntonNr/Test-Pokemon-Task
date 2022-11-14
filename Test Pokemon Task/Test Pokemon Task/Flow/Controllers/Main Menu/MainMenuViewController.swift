@@ -12,11 +12,16 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
             
         rootView.decorate()
         mainMenuViewModel.loadPokemonsArray()
-        mainMenuViewModel.pokemons = { [weak self] results in
+        mainMenuViewModel.getPokemons = { [weak self] results in
             self?.pokemonArray = results
             self?.rootView.pokemonTableView.reloadData()
         }
-                
+        mainMenuViewModel.showAlert = { text in
+            let alert = UIAlertController(title: text, message: "", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            self.present(alert, animated: true)
+        }
+        
         rootView.pokemonTableView.delegate = self
         rootView.pokemonTableView.dataSource = self
     }
@@ -49,7 +54,7 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-            
+        
         let detailsPokemon = DetailsMenuViewModel()
         detailsPokemon.pokemon = pokemonArray?.results?[indexPath.row]
             

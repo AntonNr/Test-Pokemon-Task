@@ -1,10 +1,8 @@
 import Foundation
 
 class MainMenuViewModel {
-    
-    var showErrorAlert: ((String) -> Void)?
-    var pokemons: ((PokemonArray) -> Void)?
-    var pokemonCount: Int?
+    var getPokemons: ((PokemonArray) -> Void)?
+    var showAlert: ((String) -> Void)?
             
     func loadPokemonsArray() {
         let urlString: String = "https://pokeapi.co/api/v2/pokemon"
@@ -16,21 +14,16 @@ class MainMenuViewModel {
                 [weak self] request, data, error in
                 if let data = data {
                     if let result: PokemonArray = try? JSONDecoder().decode(PokemonArray.self, from: data) {
-                            
                         if (result.results == nil) {
-                            print("Result is nil")
+                            self?.showAlert?("Data not loading error")
                         } else {
-                            self?.pokemons?(result)
-                            self?.pokemonCount = result.results?.count
+                            self?.getPokemons?(result)
                         }
-                            
                     }
                 }
-                        
-                if error != nil {
-                    print("ERROR!")
+                if let error = error {
+                    self?.showAlert?(error.localizedDescription)
                 }
-                    
             }
                 
         }
