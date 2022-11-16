@@ -23,7 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FD6667CE291D72B500909182 /* Test Pokemon Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Pokemon Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6667D1291D72B500909182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD6667D3291D72B500909182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FD6667D5291D72B500909182 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		FD6667F1291D73C600909182 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		FD6667F4291D74F900909182 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		FDD4CA5A292014B000537944 /* MainMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMenuTableViewCell.swift; path = ../../../../../../../Documents/MainMenuTableViewCell.swift; sourceTree = "<group>"; };
+		FDD4CA652925365D00537944 /* Test Pokemon Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Test Pokemon Task.app"; path = "/Users/strange_string/Desktop/Test-Pokemon-Task/Test Pokemon Task/build/Debug-iphoneos/Test Pokemon Task.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,16 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				FD6667D0291D72B500909182 /* Test Pokemon Task */,
-				FD6667CF291D72B500909182 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		FD6667CF291D72B500909182 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FD6667CE291D72B500909182 /* Test Pokemon Task.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		FD6667D0291D72B500909182 /* Test Pokemon Task */ = {
@@ -153,7 +144,7 @@
 			);
 			name = "Test Pokemon Task";
 			productName = "Test Pokemon Task";
-			productReference = FD6667CE291D72B500909182 /* Test Pokemon Task.app */;
+			productReference = FDD4CA652925365D00537944 /* Test Pokemon Task.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -180,7 +171,7 @@
 				Base,
 			);
 			mainGroup = FD6667C5291D72B500909182;
-			productRefGroup = FD6667CF291D72B500909182 /* Products */;
+			productRefGroup = FD6667C5291D72B500909182;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (

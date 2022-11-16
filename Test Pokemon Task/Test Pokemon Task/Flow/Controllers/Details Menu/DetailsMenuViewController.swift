@@ -11,13 +11,13 @@ class DetailsMenuViewController: UIViewController {
         super.viewDidLoad()
             
         rootView.decorate()
-        detailsMenuViewModel.loadPokemonInformation()
+        detailsMenuViewModel.fetchPokemonDetails()
         detailsMenuViewModel.pokemonDetails = { [weak self] result in
             self?.rootView.pokemonNameLabel.text = result.name?.capitalized
-            self?.rootView.pokemonHeightLabel.text = "\(result.height!)cm".capitalized
-            self?.rootView.pokemonWeightLabel.text = "\(result.weight!)kg".capitalized
+            self?.rootView.pokemonHeightLabel.text = "\(result.height! * 10)cm".capitalized
+            self?.rootView.pokemonWeightLabel.text = "\(result.weight! / 10)kg".capitalized
             self?.rootView.pokemonTypeLabel.text = "\(result.types?.first?.type.name ?? "nil")".capitalized
-            if let image = self?.detailsMenuViewModel.getImage(from: result.sprites?.frontImage ?? "nil") {
+            if let image = self?.detailsMenuViewModel.getImage(from: result.sprites?.frontImage ?? "") {
                 self?.rootView.pokemonImage.image = image
             }
         }

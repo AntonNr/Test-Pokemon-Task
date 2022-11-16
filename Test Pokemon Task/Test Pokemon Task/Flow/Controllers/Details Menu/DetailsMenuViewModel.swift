@@ -6,7 +6,7 @@ class DetailsMenuViewModel {
     var pokemonDetails: ((Pokemon) -> Void)?
     var showAlert: ((String) -> Void)?
         
-    func loadPokemonInformation() {
+    func fetchPokemonDetails() {
         let urlString: String = pokemon?.url ?? ""
         if let url = URL(string: urlString) {
             var request = URLRequest(url: url)
@@ -14,7 +14,7 @@ class DetailsMenuViewModel {
                 
             NSURLConnection.sendAsynchronousRequest(request, queue: OperationQueue.main) { [weak self] request, data, error in
                 if let data = data {
-                    if let result: Pokemon = try? JSONDecoder().decode(Pokemon.self, from: data){
+                    if let result: Pokemon = try? JSONDecoder().decode(Pokemon.self, from: data) {
                         if (result.name == nil) {
                             self?.showAlert?("Data not loading error")
                         } else {
@@ -22,6 +22,7 @@ class DetailsMenuViewModel {
                         }
                     }
                 }
+                
                 if let error = error {
                     self?.showAlert?(error.localizedDescription)
                 }
@@ -33,9 +34,9 @@ class DetailsMenuViewModel {
     func getImage(from string: String) -> UIImage? {
         guard let url = URL(string: string)
             else {
-                print("Unable to create URL")
+                self.showAlert?("Unable to create URL")
                 return nil
-        }
+            }
 
         var image: UIImage? = nil
         do {

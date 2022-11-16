@@ -3,7 +3,7 @@ import UIKit
 class MainMenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var rootView: MainMenuView!
-        
+    
     var mainMenuViewModel = MainMenuViewModel()
     var pokemonArray: PokemonArray?
         
@@ -11,11 +11,12 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewDidLoad()
             
         rootView.decorate()
-        mainMenuViewModel.loadPokemonsArray()
-        mainMenuViewModel.getPokemons = { [weak self] results in
+        mainMenuViewModel.fetchPokemonList()
+        mainMenuViewModel.getPokemonsList = { [weak self] results in
             self?.pokemonArray = results
             self?.rootView.pokemonTableView.reloadData()
         }
+        
         mainMenuViewModel.showAlert = { text in
             let alert = UIAlertController(title: text, message: "", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default))
@@ -35,7 +36,7 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pokemonArray?.results?.count ?? 0
     }
@@ -66,7 +67,6 @@ class MainMenuViewController: UIViewController, UITableViewDelegate, UITableView
         self.navigationController?.pushViewController(detailsVC, animated: true)
         }
     }
-
 
 }
 

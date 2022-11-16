@@ -14,6 +14,7 @@ class DetailsMenuView: UIView {
         pokemonHeightLabel.font = pokemonHeightLabel.font.withSize(25)
         pokemonWeightLabel.font = pokemonWeightLabel.font.withSize(25)
         pokemonTypeLabel.font = pokemonTypeLabel.font.withSize(25)
+        pokemonImage.image = UIImage(named: "default_image")
     }
     
 }

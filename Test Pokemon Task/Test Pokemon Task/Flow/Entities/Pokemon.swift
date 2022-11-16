@@ -3,7 +3,7 @@ import Foundation
 struct Pokemon: Codable {
     var name: String?
     var height: Int?
-    var weight: Int?
+    var weight: Double?
     var types: [Types]?
     var sprites: PokemonImage?
     var url: String?
@@ -14,7 +14,7 @@ struct Types: Codable {
 }
 
 struct PokemonImage: Codable {
-    var frontImage: String?
+    var frontImage: String = ""
     
     enum CodingKeys: String, CodingKey {
         case frontImage = "front_default"
