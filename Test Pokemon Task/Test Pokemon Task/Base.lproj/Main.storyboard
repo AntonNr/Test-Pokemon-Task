@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-1020" y="80"/>
         </scene>
-        <!--Main Menu View Controller-->
+        <!--Main Menu View Model-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainMenuViewController" id="BYZ-38-t0r" customClass="MainMenuViewController" customModule="Test_Pokemon_Task" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainMenuViewModel" id="BYZ-38-t0r" customClass="MainMenuViewModel" customModule="Test_Pokemon_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MainMenuView" customModule="Test_Pokemon_Task" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="-10.144927536231885" y="80.357142857142847"/>
         </scene>
-        <!--Details Menu View Controller-->
+        <!--Details Menu View Model-->
         <scene sceneID="03f-7A-Alx">
             <objects>
-                <viewController storyboardIdentifier="DetailsMenuViewController" id="ZR2-Ar-kxP" customClass="DetailsMenuViewController" customModule="Test_Pokemon_Task" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsMenuViewModel" id="ZR2-Ar-kxP" customClass="DetailsMenuViewModel" customModule="Test_Pokemon_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N8j-ne-5hT" customClass="DetailsMenuView" customModule="Test_Pokemon_Task" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

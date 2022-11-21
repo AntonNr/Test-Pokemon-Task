@@ -9,35 +9,33 @@
 /* Begin PBXBuildFile section */
 		FD6667D2291D72B500909182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667D1291D72B500909182 /* AppDelegate.swift */; };
 		FD6667D4291D72B500909182 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667D3291D72B500909182 /* SceneDelegate.swift */; };
-		FD6667D6291D72B500909182 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667D5291D72B500909182 /* MainMenuViewController.swift */; };
+		FD6667D6291D72B500909182 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667D5291D72B500909182 /* MainMenuViewModel.swift */; };
 		FD6667D9291D72B500909182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6667D7291D72B500909182 /* Main.storyboard */; };
 		FD6667DB291D72B800909182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6667DA291D72B800909182 /* Assets.xcassets */; };
 		FD6667DE291D72B800909182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6667DC291D72B800909182 /* LaunchScreen.storyboard */; };
-		FD6667EA291D733F00909182 /* DetailsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667E9291D733F00909182 /* DetailsMenuViewController.swift */; };
-		FD6667EC291D736A00909182 /* DetailsMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667EB291D736A00909182 /* DetailsMenuViewModel.swift */; };
+		FD6667EA291D733F00909182 /* DetailsMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667E9291D733F00909182 /* DetailsMenuViewModel.swift */; };
 		FD6667EE291D737600909182 /* DetailsMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667ED291D737600909182 /* DetailsMenuView.swift */; };
-		FD6667F0291D73B800909182 /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667EF291D73B800909182 /* MainMenuViewModel.swift */; };
 		FD6667F2291D73C600909182 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667F1291D73C600909182 /* MainMenuView.swift */; };
 		FD6667F5291D74F900909182 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667F4291D74F900909182 /* Pokemon.swift */; };
 		FDD4CA5B292014B100537944 /* MainMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD4CA5A292014B000537944 /* MainMenuTableViewCell.swift */; };
+		FDDD40AA2927A57600DDFCD5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD40A92927A57600DDFCD5 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD6667D1291D72B500909182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD6667D3291D72B500909182 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD6667D5291D72B500909182 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		FD6667D5291D72B500909182 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 		FD6667D8291D72B500909182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD6667DA291D72B800909182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD6667DD291D72B800909182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD6667DF291D72B800909182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD6667E9291D733F00909182 /* DetailsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMenuViewController.swift; sourceTree = "<group>"; };
-		FD6667EB291D736A00909182 /* DetailsMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMenuViewModel.swift; sourceTree = "<group>"; };
+		FD6667E9291D733F00909182 /* DetailsMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMenuViewModel.swift; sourceTree = "<group>"; };
 		FD6667ED291D737600909182 /* DetailsMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMenuView.swift; sourceTree = "<group>"; };
-		FD6667EF291D73B800909182 /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
 		FD6667F1291D73C600909182 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		FD6667F4291D74F900909182 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		FDD4CA5A292014B000537944 /* MainMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMenuTableViewCell.swift; path = ../../../../../../../Documents/MainMenuTableViewCell.swift; sourceTree = "<group>"; };
-		FDD4CA652925365D00537944 /* Test Pokemon Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Test Pokemon Task.app"; path = "/Users/strange_string/Desktop/Test-Pokemon-Task/Test Pokemon Task/build/Debug-iphoneos/Test Pokemon Task.app"; sourceTree = "<absolute>"; };
+		FDDD40A72927945700DDFCD5 /* Test Pokemon Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Pokemon Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDD40A92927A57600DDFCD5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				FD6667D0291D72B500909182 /* Test Pokemon Task */,
+				FDDD40A72927945700DDFCD5 /* Test Pokemon Task.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +74,7 @@
 		FD6667E5291D72E800909182 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				FDDD40A82927A54F00DDFCD5 /* Services */,
 				FD6667F3291D74E500909182 /* Entities */,
 				FD6667E6291D72EF00909182 /* Controllers */,
 			);
@@ -95,8 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FD6667F1291D73C600909182 /* MainMenuView.swift */,
-				FD6667D5291D72B500909182 /* MainMenuViewController.swift */,
-				FD6667EF291D73B800909182 /* MainMenuViewModel.swift */,
+				FD6667D5291D72B500909182 /* MainMenuViewModel.swift */,
 			);
 			path = "Main Menu";
 			sourceTree = "<group>";
@@ -105,8 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				FD6667ED291D737600909182 /* DetailsMenuView.swift */,
-				FD6667E9291D733F00909182 /* DetailsMenuViewController.swift */,
-				FD6667EB291D736A00909182 /* DetailsMenuViewModel.swift */,
+				FD6667E9291D733F00909182 /* DetailsMenuViewModel.swift */,
 			);
 			path = "Details Menu";
 			sourceTree = "<group>";
@@ -127,6 +125,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		FDDD40A82927A54F00DDFCD5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FDDD40A92927A57600DDFCD5 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,7 +150,7 @@
 			);
 			name = "Test Pokemon Task";
 			productName = "Test Pokemon Task";
-			productReference = FDD4CA652925365D00537944 /* Test Pokemon Task.app */;
+			productReference = FDDD40A72927945700DDFCD5 /* Test Pokemon Task.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -198,15 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD6667EA291D733F00909182 /* DetailsMenuViewController.swift in Sources */,
-				FD6667D6291D72B500909182 /* MainMenuViewController.swift in Sources */,
+				FD6667EA291D733F00909182 /* DetailsMenuViewModel.swift in Sources */,
+				FD6667D6291D72B500909182 /* MainMenuViewModel.swift in Sources */,
 				FD6667F2291D73C600909182 /* MainMenuView.swift in Sources */,
 				FDD4CA5B292014B100537944 /* MainMenuTableViewCell.swift in Sources */,
+				FDDD40AA2927A57600DDFCD5 /* NetworkManager.swift in Sources */,
 				FD6667EE291D737600909182 /* DetailsMenuView.swift in Sources */,
 				FD6667D2291D72B500909182 /* AppDelegate.swift in Sources */,
 				FD6667F5291D74F900909182 /* Pokemon.swift in Sources */,
-				FD6667EC291D736A00909182 /* DetailsMenuViewModel.swift in Sources */,
-				FD6667F0291D73B800909182 /* MainMenuViewModel.swift in Sources */,
 				FD6667D4291D72B500909182 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

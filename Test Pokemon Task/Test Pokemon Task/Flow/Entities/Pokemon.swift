@@ -14,11 +14,11 @@ struct Types: Codable {
 }
 
 struct PokemonImage: Codable {
-    var frontImage: String = ""
-    
     enum CodingKeys: String, CodingKey {
         case frontImage = "front_default"
     }
+    
+    var frontImage: String = ""
 }
 
 struct TypeOfPokemon: Codable {
