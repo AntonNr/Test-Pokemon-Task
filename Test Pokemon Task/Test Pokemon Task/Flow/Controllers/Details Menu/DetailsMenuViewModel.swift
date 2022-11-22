@@ -5,15 +5,24 @@ class DetailsMenuViewModel: UIViewController {
     
     @IBOutlet var rootView: DetailsMenuView!
         
-    var pokemon: Pokemon?
+    var pokemon: Pokemon
     
     let networkManager = NetworkManager()
+    
+    init?(coder: NSCoder, pokemon: Pokemon) {
+        self.pokemon = pokemon
+        super.init(coder: coder)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("You must create this view controller with a user.")
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
         
         rootView.decorate()
-        networkManager.fetchPokemonDetails(api: pokemon?.url ?? "", completionHandler: { [weak self] result in
+        networkManager.fetchPokemonDetails(api: pokemon.url ?? "", completionHandler: { [weak self] result in
             switch result {
             case .success(let pokemon):
                 self?.rootView.pokemonNameLabel.text = pokemon.name?.capitalized

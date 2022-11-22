@@ -59,13 +59,13 @@ class MainMenuViewModel: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
             
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        if let detailsVC: DetailsMenuViewModel = storyboard.instantiateViewController(withIdentifier: "DetailsMenuViewModel") as? DetailsMenuViewModel {
-                
-            detailsVC.pokemon = pokemonArray?.results?[indexPath.row]
-            
-        self.navigationController?.pushViewController(detailsVC, animated: true)
+        guard let detailsVC: DetailsMenuViewModel = storyboard?.instantiateViewController(identifier: "DetailsMenuViewModel", creator: {coder in
+            return DetailsMenuViewModel(coder: coder, pokemon: (self.pokemonArray?.results?[indexPath.row])!)
+        }) else {
+            fatalError("Failed to load EditUserViewController from storyboard.")
         }
+                            
+        self.navigationController?.pushViewController(detailsVC, animated: true)
     }
 
 }
