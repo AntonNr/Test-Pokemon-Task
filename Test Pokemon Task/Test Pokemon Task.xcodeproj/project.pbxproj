@@ -19,7 +19,18 @@
 		FD6667F5291D74F900909182 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6667F4291D74F900909182 /* Pokemon.swift */; };
 		FDD4CA5B292014B100537944 /* MainMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD4CA5A292014B000537944 /* MainMenuTableViewCell.swift */; };
 		FDDD40AA2927A57600DDFCD5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDD40A92927A57600DDFCD5 /* NetworkManager.swift */; };
+		FDF63009292D4EAC00FBB90B /* Test_Pokemon_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF63008292D4EAC00FBB90B /* Test_Pokemon_TaskTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDF6300A292D4EAC00FBB90B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6667C6291D72B500909182 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6667CD291D72B500909182;
+			remoteInfo = "Test Pokemon Task";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FD6667D1291D72B500909182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,10 +47,19 @@
 		FDD4CA5A292014B000537944 /* MainMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainMenuTableViewCell.swift; path = ../../../../../../../Documents/MainMenuTableViewCell.swift; sourceTree = "<group>"; };
 		FDDD40A72927945700DDFCD5 /* Test Pokemon Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test Pokemon Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDDD40A92927A57600DDFCD5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FDF63006292D4EAC00FBB90B /* Test Pokemon TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test Pokemon TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDF63008292D4EAC00FBB90B /* Test_Pokemon_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_Pokemon_TaskTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FD6667CB291D72B500909182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF63003292D4EAC00FBB90B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +74,8 @@
 			children = (
 				FD6667D0291D72B500909182 /* Test Pokemon Task */,
 				FDDD40A72927945700DDFCD5 /* Test Pokemon Task.app */,
+				FDF63006292D4EAC00FBB90B /* Test Pokemon TaskTests.xctest */,
+				FDF63007292D4EAC00FBB90B /* Test Pokemon TaskTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +155,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FDF63007292D4EAC00FBB90B /* Test Pokemon TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDF63008292D4EAC00FBB90B /* Test_Pokemon_TaskTests.swift */,
+			);
+			path = "Test Pokemon TaskTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +183,24 @@
 			productReference = FDDD40A72927945700DDFCD5 /* Test Pokemon Task.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FDF63005292D4EAC00FBB90B /* Test Pokemon TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDF6300E292D4EAC00FBB90B /* Build configuration list for PBXNativeTarget "Test Pokemon TaskTests" */;
+			buildPhases = (
+				FDF63002292D4EAC00FBB90B /* Sources */,
+				FDF63003292D4EAC00FBB90B /* Frameworks */,
+				FDF63004292D4EAC00FBB90B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDF6300B292D4EAC00FBB90B /* PBXTargetDependency */,
+			);
+			name = "Test Pokemon TaskTests";
+			productName = "Test Pokemon TaskTests";
+			productReference = FDF63006292D4EAC00FBB90B /* Test Pokemon TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +213,10 @@
 				TargetAttributes = {
 					FD6667CD291D72B500909182 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					FDF63005292D4EAC00FBB90B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FD6667CD291D72B500909182;
 					};
 				};
 			};
@@ -182,6 +234,7 @@
 			projectRoot = "";
 			targets = (
 				FD6667CD291D72B500909182 /* Test Pokemon Task */,
+				FDF63005292D4EAC00FBB90B /* Test Pokemon TaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +247,13 @@
 				FD6667DE291D72B800909182 /* LaunchScreen.storyboard in Resources */,
 				FD6667DB291D72B800909182 /* Assets.xcassets in Resources */,
 				FD6667D9291D72B500909182 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDF63004292D4EAC00FBB90B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +276,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDF63002292D4EAC00FBB90B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF63009292D4EAC00FBB90B /* Test_Pokemon_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDF6300B292D4EAC00FBB90B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6667CD291D72B500909182 /* Test Pokemon Task */;
+			targetProxy = FDF6300A292D4EAC00FBB90B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FD6667D7291D72B500909182 /* Main.storyboard */ = {
@@ -408,6 +484,40 @@
 			};
 			name = Release;
 		};
+		FDF6300C292D4EAC00FBB90B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tms.Test-Pokemon-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test Pokemon Task.app/Test Pokemon Task";
+			};
+			name = Debug;
+		};
+		FDF6300D292D4EAC00FBB90B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tms.Test-Pokemon-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test Pokemon Task.app/Test Pokemon Task";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,6 +535,15 @@
 			buildConfigurations = (
 				FD6667E3291D72B800909182 /* Debug */,
 				FD6667E4291D72B800909182 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDF6300E292D4EAC00FBB90B /* Build configuration list for PBXNativeTarget "Test Pokemon TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDF6300C292D4EAC00FBB90B /* Debug */,
+				FDF6300D292D4EAC00FBB90B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
